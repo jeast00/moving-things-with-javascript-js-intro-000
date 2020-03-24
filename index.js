@@ -18,3 +18,15 @@ function moveDodgerRight() {
     dodger.style.left = `${right + 1}px`
   }
 }
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 37) {
+    moveDodgerLeft();
+  }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.which === 39) {
+    moveDodgerRight();
+  }
+});
